@@ -1,0 +1,22 @@
+{
+  "name": "vueflow",
+  "version": "1.0.0",
+  "description": "Remember to install Vue using NPM: npm install vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evalenzuela/vue-basic-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evalenzuela/vue-basic-example/issues"
+  },
+  "homepage": "https://github.com/evalenzuela/vue-basic-example#readme",
+  "dependencies": {
+    "vue": "^1.0.26"
+  }
+}
