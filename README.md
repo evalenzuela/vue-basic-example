@@ -1,4 +1,4 @@
-<h1>Vue Examples</h1>
+<h1>Vue Examples - Basic</h1>
 <h2>Example #01</h2>
 <p>
 Simple "Hello New Vue World" example
@@ -22,4 +22,9 @@ Two-way Binding Example. Preview HTML using triple curly brackets or double must
 <h2>Example #05</h2>
 <p>
 Using loop. Use a computed property to get count.
+</p>
+
+<h2>Example #06</h2>
+<p>
+Simple example, using events/methods .
 </p>

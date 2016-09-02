@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example 06</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message" />
+
+        <button v-on:click="show">Click me!</button>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: ''
+            },
+            methods: {
+                show: function(event) {
+                    alert(this.message);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
