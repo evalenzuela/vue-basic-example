@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Example 05</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <p>Tasks List - ({{count}} tasks)</p>
+                <ul>
+                    <li v-for="task in tasks">
+                        {{ task.name }} ( {{task.estimate}} )
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                tasks: [
+                    { name: 'Task 01', estimate: '1h'},
+                    { name: 'Task 02', estimate: '2h'},
+                    { name: 'Task 03', estimate: '3h 30m'},
+                    { name: 'Task 04', estimate: '30m'}
+                ]
+            },
+            computed: {
+                count: function() {
+                    return this.tasks.length;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
