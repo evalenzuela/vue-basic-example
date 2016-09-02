@@ -8,3 +8,8 @@ Simple "Hello New Vue World" example
 <p>
 Two-way Binding Example. Using first name and last name.
 </p>
+
+<h2>Example #03</h2>
+<p>
+Two-way Binding Example. Conditions and Computed properties. Difference about v-show vs v-if, v-if does not load element on DOM, v-show does.
+</p>
